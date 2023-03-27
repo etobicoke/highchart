@@ -5,6 +5,13 @@ import './App.css'
 import HighchartsReact from 'highcharts-react-official'
 import Highcharts from 'highcharts'
 import HighStock from "highcharts/highstock"
+import more from "highcharts/highcharts-more";
+import draggable from "highcharts/modules/draggable-points";
+
+if (typeof HighStock === "object") {
+    more(HighStock);
+    draggable(HighStock);
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -830,6 +837,9 @@ function App() {
         series: [
             {
                 type: "candlestick",
+                dragDrop: {
+                    draggableY: true
+                },
                 data: (function() {
                     var ohlcData = [];
 
@@ -847,6 +857,9 @@ function App() {
             },
             {
                 type: "column",
+                dragDrop: {
+                    draggableY: true
+                },
                 data: (function() {
                     var columnData = [];
 
