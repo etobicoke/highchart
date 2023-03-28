@@ -835,26 +835,26 @@ function App() {
         },
 
         series: [
-            {
-                type: "candlestick",
-                dragDrop: {
-                    draggableY: true
-                },
-                data: (function() {
-                    var ohlcData = [];
-
-                    for (var i = 0; i < mockData.length; i++) {
-                        ohlcData.push([
-                            mockData[i][0], // the date
-                            mockData[i][1], // open
-                            mockData[i][2], // high
-                            mockData[i][3], // low
-                            mockData[i][4] // close
-                        ]);
-                    }
-                    return ohlcData;
-                })()
-            },
+            // {
+            //     type: "candlestick",
+            //     dragDrop: {
+            //         draggableY: true
+            //     },
+            //     data: (function() {
+            //         var ohlcData = [];
+            //
+            //         for (var i = 0; i < mockData.length; i++) {
+            //             ohlcData.push([
+            //                 mockData[i][0], // the date
+            //                 mockData[i][1], // open
+            //                 mockData[i][2], // high
+            //                 mockData[i][3], // low
+            //                 mockData[i][4] // close
+            //             ]);
+            //         }
+            //         return ohlcData;
+            //     })()
+            // },
             {
                 type: "column",
                 dragDrop: {
@@ -903,6 +903,12 @@ function App() {
         {/*    highcharts={Highcharts}*/}
         {/*    options={options}*/}
         {/*/>*/}
+
+        <HighchartsReact
+            highcharts={HighStock}
+            constructorType={"stockChart"}
+            options={mockOptions}
+        />
 
         <HighchartsReact
             highcharts={HighStock}
