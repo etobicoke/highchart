@@ -619,7 +619,6 @@ function App() {
 
         series: [
             {
-                // type: "column",
                 dragDrop: {
                     draggableY: true
                 },
