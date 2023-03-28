@@ -510,39 +510,39 @@ function App() {
             text: "GDP Canada"
         },
 
-        yAxis: [
-            {
-                labels: {
-                    align: "right",
-                    x: -3
-                },
-                title: {
-                    text: "OHLC"
-                },
-                height: "60%",
-                lineWidth: 2,
-                resize: {
-                    enabled: true
-                }
-            },
-            {
-                labels: {
-                    align: "right",
-                    x: -3
-                },
-                title: {
-                    text: "Volume"
-                },
-                top: "65%",
-                height: "35%",
-                offset: 0,
-                lineWidth: 2
-            }
-        ],
+        // yAxis: [
+        //     {
+        //         labels: {
+        //             align: "right",
+        //             x: -3
+        //         },
+        //         title: {
+        //             text: "OHLC"
+        //         },
+        //         height: "60%",
+        //         lineWidth: 2,
+        //         resize: {
+        //             enabled: true
+        //         }
+        //     },
+        //     {
+        //         labels: {
+        //             align: "right",
+        //             x: -3
+        //         },
+        //         title: {
+        //             text: "Volume"
+        //         },
+        //         top: "65%",
+        //         height: "35%",
+        //         offset: 0,
+        //         lineWidth: 2
+        //     }
+        // ],
 
-        tooltip: {
-            split: true
-        },
+        // tooltip: {
+        //     split: true
+        // },
 
         series: [
             {
@@ -550,7 +550,7 @@ function App() {
                     draggableY: true
                 },
                 data: gdp,
-                yAxis: 1
+                // yAxis: 1
             }
         ]
     };
@@ -624,18 +624,6 @@ function App() {
                     draggableY: true
                 },
                 data: unemployment,
-
-                //     (function() {
-                //     var columnData = [];
-                //
-                //     for (var i = 0; i < mockData.length; i++) {
-                //         columnData.push([
-                //             mockData[i][0], // the date
-                //             mockData[i][5] // the volume
-                //         ]);
-                //     }
-                //     return columnData;
-                // })(),
                 yAxis: 1
             }
         ]
