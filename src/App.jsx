@@ -548,18 +548,6 @@ function App() {
                     [1745971200000, 2298.611],
                     [1753920000000, 2308.8856]
                 ],
-
-                //     (function() {
-                //     var columnData = [];
-                //
-                //     for (var i = 0; i < mockData.length; i++) {
-                //         columnData.push([
-                //             mockData[i][0], // the date
-                //             mockData[i][5] // the volume
-                //         ]);
-                //     }
-                //     return columnData;
-                // })(),
                 yAxis: 1
             }
         ]
