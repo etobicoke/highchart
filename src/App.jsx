@@ -337,8 +337,6 @@ function App() {
                         },
                         drag: function (e){
 
-                            console.log('gdp......', gdp);
-
                             let pgdp = getItemAtIndex(pGDP, e.target.options.x)
                             let OG = 100 * (e.target.options.y/pgdp[1] - 1)
 
@@ -411,7 +409,7 @@ function App() {
 
                             let curPGDP = getItemAtIndex(pGDP, e.target.options.x)
 
-                            let GDP = curPGDP[1] * (curOG/100 +1)
+                            let GDP = curPGDP[1] * (curOG/100 + 1)
 
                             let tmpArray = JSON.parse(JSON.stringify(gdp))
                             tmpArray.find(function(g, index){
