@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.atlas-horizontal {
+  display: flex;
+  flex-direction: row;
+}

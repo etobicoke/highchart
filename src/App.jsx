@@ -445,20 +445,28 @@ function App() {
       <p className="read-the-docs">
         ATLAS Project: Proof of Concept
       </p>
+      <div className="atlas-horizontal">
+          <div>
+              <HighchartsReact
+                  highcharts={HighStock}
+                  constructorType={"stockChart"}
+                  options={GDPOptions}
+                  ref={gdpRef}
+              />
+          </div>
+          <div>
+              <HighchartsReact
+                  highcharts={HighStock}
+                  constructorType={"stockChart"}
+                  options={UROptions}
+                  ref={unEmRef}
+              />
+          </div>
+      </div>
 
-        <HighchartsReact
-            highcharts={HighStock}
-            constructorType={"stockChart"}
-            options={GDPOptions}
-            ref={gdpRef}
-        />
 
-        <HighchartsReact
-            highcharts={HighStock}
-            constructorType={"stockChart"}
-            options={UROptions}
-            ref={unEmRef}
-        />
+
+
     </div>
   )
 }
