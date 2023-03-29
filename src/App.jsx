@@ -14,7 +14,6 @@ if (typeof HighStock === "object") {
 }
 
 function App() {
-    const [count, setCount] = useState(0)
     const gdpRef = useRef()
     const unEmRef = useRef()
 
