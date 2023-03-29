@@ -337,51 +337,28 @@ function App() {
                             // console.log('dragStart......gdp...', e);
                         },
                         drag: function (e){
-                            // console.log('drag.......gdp..', e.target.options.x, e.target.options.y);
-                            // let tmpArray = JSON.parse(JSON.stringify(unemployment))
-                            // tmpArray.find(function(unemploy, index){
-                            //     if(unemploy[0] === e.target.options.x) {
-                            //         // console.log('before.....', unemploy[1])
-                            //         unemploy[1] = unemploy[1] + 1
-                            //         // console.log('after.....', unemployment)
-                            //         // console.log('looping....', unemploy);
-                            //         setUnemployment(tmpArray)
-                            //         // console.log('new....unemployment....', unemployment);
-                            //     }
-                            // })
+
                             console.log('gdp......', gdp);
 
                             let pgdp = getItemAtIndex(pGDP, e.target.options.x)
-                            console.log('pgdp....gdp...', pgdp, e.target.options.y, e.target.options.x);
                             let OG = 100 * (e.target.options.y/pgdp[1] - 1)
-                            console.log('new OG....', OG)
 
                             let cUnEmploy = getItemAtIndex(unemployment, e.target.options.x)
-                            console.log('unemployment.....', cUnEmploy)
 
                             let timeAtPreviousIndex = getItemAtPreviousIndex(unemployment, e.target.options.x)
-                            console.log('time at previous index...', timeAtPreviousIndex[0])
 
                             let pOG = getOG(timeAtPreviousIndex)
-                            console.log('previous,,, OG...', pOG, pOG[0], pOG[1])
                             let pUnEmploy = getItemAtIndex(unemployment, timeAtPreviousIndex)
-                            console.log('previous....Unemploy....', pUnEmploy, pUnEmploy[0], pUnEmploy[1]);
 
                             let deltaOG = pOG[0][1] - OG
-                            console.log('delta.... OG.....', deltaOG)
 
                             let nUnEmploy = pUnEmploy[1] - .5 * deltaOG
-                            console.log('new Unemployment.....', nUnEmploy);
 
                             let tmpArray = JSON.parse(JSON.stringify(unemployment))
                             tmpArray.find(function(unemploy, index){
                                 if(unemploy[0] === e.target.options.x) {
-                                    // console.log('before.....', unemploy[1])
                                     unemploy[1] = nUnEmploy
-                                    // console.log('after.....', unemployment)
-                                    // console.log('looping....', unemploy);
                                     setUnemployment(tmpArray)
-                                    // console.log('new....unemployment....', unemployment);
                                 }
                             })
 
@@ -423,8 +400,6 @@ function App() {
                         dragStart: function (e){
                         },
                         drag: function (e){
-                            console.log('drag........unemploy.', e.target.options.x, e.target.options.y);
-                            console.log('unemployment....', unemployment)
 
                             let prevUnEmployTime = getItemAtPreviousIndex(unemployment, e.target.options.x)
                             let prevUnEmploy = getItemAtIndex(unemployment, prevUnEmployTime)
@@ -442,12 +417,8 @@ function App() {
                             let tmpArray = JSON.parse(JSON.stringify(gdp))
                             tmpArray.find(function(g, index){
                                 if(g[0] === e.target.options.x) {
-                                    // console.log('before.....', unemploy[1])
                                     g[1] = GDP
-                                    // console.log('after.....', unemployment)
-                                    // console.log('looping....', unemploy);
                                     setGDP(tmpArray)
-                                    // console.log('new....unemployment....', unemployment);
                                 }
                             })
                         },
