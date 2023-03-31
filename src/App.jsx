@@ -347,7 +347,7 @@ function App() {
                             let pOG = getOG(timeAtPreviousIndex)
                             let pUnEmploy = getItemAtIndex(unemployment, timeAtPreviousIndex)
 
-                            let deltaOG = pOG[0][1] - OG
+                            let deltaOG = OG - pOG[0][1]
 
                             let nUnEmploy = pUnEmploy[1] - .5 * deltaOG
 
