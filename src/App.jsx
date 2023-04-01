@@ -333,7 +333,6 @@ function App() {
                 point: {
                     events: {
                         dragStart: function (e){
-                            // console.log('dragStart......gdp...', e);
                         },
                         drag: function (e){
 
@@ -362,7 +361,6 @@ function App() {
 
                         },
                         drop: function(e){
-                            // console.log('drop.......gdp..', e.target.options.x, e.target.options.y);
                         }
                     }
                 }
@@ -375,7 +373,6 @@ function App() {
                     draggableY: true
                 },
                 data: gdp,
-                // yAxis: 1
             }
         ]
     };
@@ -420,7 +417,6 @@ function App() {
                             })
                         },
                         drop: function(e){
-                            // console.log('drop.......unemploy..', e.target.options.x, e.target.options.y);
                         }
                     }
                 }
