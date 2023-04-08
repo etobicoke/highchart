@@ -134,6 +134,7 @@ function App() {
         })
     }
 
+    // TODO: I am not sure I need this function
     const getOG = function (time) {
         return OG.filter(function(item){
             return item[0] === time
