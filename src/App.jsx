@@ -272,8 +272,7 @@ function App() {
                 dragDrop: {
                     draggableY: true
                 },
-                data: unemployment,
-                // yAxis: 1
+                data: unemployment
             }
         ]
     };
@@ -300,10 +299,6 @@ function App() {
               />
           </div>
       </div>
-
-
-
-
     </div>
   )
 }
