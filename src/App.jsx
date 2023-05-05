@@ -183,6 +183,7 @@ function App() {
                             let pgdp = getItemAtIndex(pGDP, e.target.options.x)
                             let OG = 100 * (e.target.options.y/pgdp[1] - 1)
 
+                            // TODO: refactor below variable
                             let cUnEmploy = getItemAtIndex(unemployment, e.target.options.x)
 
                             let timeAtPreviousIndex = getItemAtPreviousIndex(unemployment, e.target.options.x)
