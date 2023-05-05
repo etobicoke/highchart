@@ -127,6 +127,7 @@ function App() {
     const [gdp, setGDP] = useState(gdpInitialValue)
     const [unemployment, setUnemployment] = useState(unEmploymentInitialValue)
 
+    // TODO: Refactor below function
     const getPGDP = function (time) {
         return pGDP.filter(function(item){
             return item[0] === time
