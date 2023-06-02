@@ -171,9 +171,6 @@ function App() {
 
         plotOptions: {
             series: {
-                dragDrop: {
-
-                },
                 point: {
                     events: {
                         drag: function (e){
