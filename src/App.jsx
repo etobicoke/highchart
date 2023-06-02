@@ -205,8 +205,6 @@ function App() {
 
 
                         },
-                        drop: function(e){
-                        }
                     }
                 }
             },
