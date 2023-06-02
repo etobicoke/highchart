@@ -176,8 +176,6 @@ function App() {
                 },
                 point: {
                     events: {
-                        dragStart: function (e){
-                        },
                         drag: function (e){
 
                             let pgdp = getItemAtIndex(pGDP, e.target.options.x)
@@ -202,8 +200,6 @@ function App() {
                                     setUnemployment(tmpArray)
                                 }
                             })
-
-
                         },
                     }
                 }
