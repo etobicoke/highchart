@@ -208,7 +208,7 @@ function App() {
                 dragDrop: {
                     draggableY: true
                 },
-                data: gdp,
+                data: gdp
             }
         ]
     };
@@ -251,8 +251,6 @@ function App() {
                                     setGDP(tmpArray)
                                 }
                             })
-                        },
-                        drop: function(e){
                         }
                     }
                 }
