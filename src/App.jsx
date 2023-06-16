@@ -227,8 +227,6 @@ function App() {
                 },
                 point: {
                     events: {
-                        dragStart: function (e){
-                        },
                         drag: function (e){
 
                             let prevUnEmployTime = getItemAtPreviousIndex(unemployment, e.target.options.x)
